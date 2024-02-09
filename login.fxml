@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="495.0" prefWidth="926.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+
+  <Label fx:id="welcomeText" textAlignment="CENTER" />
+   <AmbientLight color="CHARTREUSE" lightOn="true" />
+   <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="886.0">
+      <children>
+         <ImageView fitHeight="724.0" fitWidth="947.0" layoutX="-21.0" layoutY="-125.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-82.33331298828125" AnchorPane.leftAnchor="-21.0" AnchorPane.rightAnchor="-40.0" AnchorPane.topAnchor="-125.0">
+            <image>
+               <Image url="@yoal-desurmont-jqgsM3B9Fpo-unsplash.jpg" />
+            </image>
+            <viewport>
+               <Rectangle2D />
+            </viewport>
+            <cursor>
+               <Cursor fx:constant="DEFAULT" />
+            </cursor>
+         </ImageView>
+         <Text fill="#f8f5f5" fontSmoothingType="LCD" layoutX="109.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" textAlignment="CENTER" wrappingWidth="89.13671875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <TextField layoutX="244.0" layoutY="191.0" prefHeight="37.0" prefWidth="417.0" />
+         <Text fill="#ebebeb" layoutX="109.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" textAlignment="CENTER" wrappingWidth="89.13671875">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Text>
+         <PasswordField layoutX="244.0" layoutY="249.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="37.0" prefWidth="417.0" />
+         <Button alignment="CENTER" layoutX="408.0" layoutY="328.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="89.0" text="LOGIN" textAlignment="CENTER" textFill="#171717" textOverrun="LEADING_ELLIPSIS">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Button>
+         <Text fill="WHITE" layoutX="40.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER" wrappingWidth="408.576171875">
+            <font>
+               <Font size="96.0" />
+            </font>
+         </Text>
+      </children>
+   </AnchorPane>
+   <effect>
+      <Blend />
+   </effect>
+</VBox>
